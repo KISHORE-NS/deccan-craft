@@ -1,0 +1,201 @@
+/* ============================
+   HERO SECTION
+============================ */
+
+.hero-section {
+ 
+  background-color: #f1ebe4;
+}
+
+.hero-background {
+  position: relative;
+  min-height: 640px;
+  overflow: hidden;
+
+  background-image: url("../../assets/images/hh.png");
+  background-size: cover;
+  background-position: center 55%;
+  background-repeat: no-repeat;
+
+  
+  isolation: isolate;
+}
+
+/* Dark overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background: linear-gradient(
+    90deg,
+    rgba(15, 12, 10, 0.78) 0%,
+    rgba(15, 12, 10, 0.65) 48%,
+    rgba(15, 12, 10, 0.52) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* ============================
+   HERO CONTENT
+============================ */
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  padding-top: 52px;
+  padding-bottom: 60px;
+}
+
+.hero-content {
+  max-width: 650px;
+  color: #f1ebe4;
+}
+
+/* ============================
+   CATEGORY BADGE
+============================ */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 7px 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+
+  color: #f1ebe4;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.hero-badge-icon {
+  font-size: 15px;
+}
+
+/* ============================
+   HEADING
+============================ */
+
+.hero-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  color: #f1ebe4;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 4.2vw, 55px);
+  font-weight: 400;
+  line-height: 0.99;
+  letter-spacing: -2.2px;
+}
+
+/* ============================
+   DESCRIPTION
+============================ */
+
+.hero-description {
+  max-width: 590px;
+  margin-bottom: 34px;
+
+  color: #f1ebe4;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ============================
+   TABLET
+============================ */
+
+@media (max-width: 991.98px) {
+  .hero-background {
+    min-height: 570px;
+    background-position: center;
+  }
+
+  .hero-container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-title {
+    font-size: clamp(40px, 5.5vw, 54px);
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description {
+    max-width: 540px;
+    font-size: 15px;
+  }
+}
+
+/* ============================
+   MOBILE
+============================ */
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 10px;
+  }
+
+  .hero-background {
+    min-height: 590px;
+    background-position: 57% center;
+    border-radius: 12px;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(15, 12, 10, 0.82),
+      rgba(15, 12, 10, 0.66)
+    );
+  }
+
+  .hero-container {
+    padding: 40px 22px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-badge {
+    gap: 8px;
+    padding: 7px 11px;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+  }
+
+  .hero-title {
+    margin-top: 24px;
+    margin-bottom: 18px;
+    font-size: clamp(36px, 9vw, 46px);
+    line-height: 1.05;
+    letter-spacing: -1.2px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .hero-description {
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+
+}
