@@ -2,6 +2,12 @@
 import "./Service.css";
 import Navbar from "../../components/navbar/Navbar";
 import service1 from "../../assets/images/service1.jpg"
+import tvService from "../../assets/images/tv-service.jpg"
+import wardrobeService from "../../assets/images/wardrobe-service.jpg"
+import livingService from "../../assets/images/living-service.jpg"
+import officeService from "../../assets/images/office-service.jpg"
+import customService from "../../assets/images/custom-service.jpg"
+import S1 from "../../assets/images/S1.jpg"
 
 import {
   faUtensils,
@@ -24,42 +30,42 @@ function Service() {
   const services = [
     {
       icon: faUtensils,
-      image: "/images/service-kitchen.jpg",
+      image: S1,
       title: "Modular Kitchens",
       description:
         "Beautifully designed kitchen cabinets and storage solutions that combine functionality, convenience, and modern style.",
     },
     {
       icon: faBed,
-      image: "/images/service-bedroom.jpg",
+      image: wardrobeService,
       title: "Bedroom Furniture",
       description:
         "Custom-made beds, wardrobes, cupboards, and bedroom storage designed to make your personal space comfortable.",
     },
     {
       icon: faTv,
-      image: "/images/service-tv.jpg",
+      image: tvService,
       title: "TV Units",
       description:
         "Modern TV units with integrated storage, stylish finishes, and practical designs to enhance your living room.",
     },
     {
       icon: faCouch,
-      image: "/images/service-living.jpg",
+      image: livingService,
       title: "Living Room Furniture",
       description:
         "Elegant wooden furniture, shelves, partitions, and centre tables that bring character to your living space.",
     },
     {
       icon: faBriefcase,
-      image: "/images/service-office.jpg",
+      image: officeService,
       title: "Office Furniture",
       description:
         "Practical office desks, workstations, storage cabinets, and furniture tailored to your workspace.",
     },
     {
       icon: faHammer,
-      image: "/images/service-custom.jpg",
+      image: customService,
       title: "Custom Woodwork",
       description:
         "Personalised carpentry solutions created according to your ideas, measurements, requirements, and available space.",
